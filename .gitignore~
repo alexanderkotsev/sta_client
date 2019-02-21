@@ -1,9 +1,0 @@
-#No tracking of those files.
-__pycache__/
-venv/
-.idea/
-
-.gitignore
-
-#Compiled sources
-*.pyc
