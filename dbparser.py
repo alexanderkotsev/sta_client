@@ -14,7 +14,7 @@ if starequests.utc_time < timestamp_int:
     cursor.execute(str_select)
     new_observations = cursor.fetchall()
     nrows_new = len(new_observations)
-    print("Number ofx` obsertvations to be pushed:", nrows_new)
+    print("Number of obsertvations to be pushed:", nrows_new)
     ase_conn.close()
 else:
     print('No newer data is available!')
