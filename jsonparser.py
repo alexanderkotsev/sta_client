@@ -17,7 +17,7 @@ def json_create(channel):
     return json_obj
 
 if hasattr(db, 'new_observations'):
-    for e, obs in enumerate(db.new_observations):
+    for obs in db.new_observations:
         inttime = int((obs)[9]) / 1000
         utctime = datetime.datetime.utcfromtimestamp(inttime).isoformat() + 'Z'
         json_objects = json_create('ch' + str(obs[3]))
